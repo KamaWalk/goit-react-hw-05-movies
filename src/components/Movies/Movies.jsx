@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import css from './Movies.module.css';
+// import css from './Movies.module.css';
 import Loader from '../Loader/Loader';
 import SearchForm from '../SearchForm/SearchForm';
 
