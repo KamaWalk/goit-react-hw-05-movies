@@ -1,0 +1,26 @@
+.navi {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgb(202, 62, 160);
+    font-size: larger;
+  }
+  
+  .navi a {
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .active {
+    font-weight: 700;
+    font-size: larger;
+    color: rgb(129, 6, 102);
+  }
+  
+  .navi .active {
+    text-decoration: underline;
+  }

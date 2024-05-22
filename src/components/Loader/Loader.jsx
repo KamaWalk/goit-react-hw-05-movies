@@ -1,12 +1,12 @@
 import React from 'react';
 import { FallingLines } from 'react-loader-spinner';
-// import './Loader.css';
+import css from './Loader.module.css';
 
 const Loader = () => {
   return (
-    <div className="loader">
+    <div className={css.loader}>
       <FallingLines
-  color="#4fa94d"
+  color="rgb(255, 192, 203)"
   width="100"
   visible={true}
   ariaLabel="falling-circles-loading"

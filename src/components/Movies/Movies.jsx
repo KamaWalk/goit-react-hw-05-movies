@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import css from './Movies.module.css';
+import css from './Movies.module.css';
 import Loader from '../Loader/Loader';
 import SearchForm from '../SearchForm/SearchForm';
 
@@ -40,15 +40,15 @@ function Movies() {
   }, [searchParams]);
 
   return (
-    <div className="searched-movies">
+    <div className={css.searchedMovies}>
       <h1>Search Movies</h1>
       <SearchForm onSubmit={handleSearch} />
       {loading ? (
         <Loader />
       ) : (
-        <ul className="searched-movies-list">
+        <ul className={css.searchedMoviesList}>
           {results.map(movie => (
-            <li className="searched-movies-item" key={movie.id}>
+            <li className={css.searchedMoviesItem} key={movie.id}>
               <Link to={`/movies/${movie.id}`} state={{ from: 'Movies' }}>
                 <img
                   src={

@@ -1,0 +1,40 @@
+.searchedMoviesInput {
+    height: 35px;
+    width: 300px;
+    border: 1px solid #c12c87;
+    border-radius: 8px;
+    padding-left: 10px;
+    box-shadow: 0 3px 8px rgba(221, 54, 207, 0.1);
+    transition: border-color 0.3s ease;
+  }
+  
+  .searchedMoviesInput:focus,
+  .searchedMoviesInput:active {
+    border-color: rgb(244, 120, 235);
+    border-width: 0.1px;
+    outline: none;
+  }
+  
+  .searchedMoviesButton {
+    width: 90px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: pink;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .searchedMoviesButton:hover,
+  .searchedMoviesButton:active {
+    background-color: rgb(243, 182, 228);
+    color: rgb(167, 5, 119);
+    cursor: pointer;
+  }
+  
+  .inputDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }

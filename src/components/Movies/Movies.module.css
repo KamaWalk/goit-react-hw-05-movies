@@ -2,7 +2,7 @@ h1 {
     color: black;
   }
   
-  .searched-movies {
+  .searchedMovies {
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
@@ -10,13 +10,13 @@ h1 {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .searched-movies h1 {
+  .searchedMovies h1 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
   }
   
-  .searched-movies-list {
+  .searchedMoviesList {
     max-width: 800px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -26,7 +26,7 @@ h1 {
     margin: 20px auto;
   }
   
-  .searched-movies-item {
+  .searchedMoviesItem {
     background-color: #fff;
     max-width: 200px;
     border: 1px solid #ddd;
@@ -36,24 +36,24 @@ h1 {
     transition: transform 0.3s ease;
   }
   
-  .searched-movies-item:hover {
+  .searchedMoviesItem:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
   
-  .searched-movies-item img {
+  .searchedMoviesItem img {
     width: 100%;
     height: auto;
     border-radius: 5px;
   }
   
-  .searched-movies-item a {
+  .searchedMoviesItem a {
     text-decoration: none;
     color: inherit;
     display: block;
   }
   
-  .searched-movies-item div {
+  .searchedMoviesItem div {
     margin-top: 30px;
     text-align: center;
     font-weight: bold;

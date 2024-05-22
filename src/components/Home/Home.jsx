@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-// import './Home.css';
+import css from './Home.module.css';
 import Loader from '../Loader/Loader';
 
 function Home() {
@@ -26,11 +26,11 @@ function Home() {
   if (loading) return <Loader />;
 
   return (
-    <div className="trending-movies">
+    <div className={css.trendingMovies}>
       <h1>Trending Movies</h1>
-      <ul className="trending-movies-list">
+      <ul className={css.trendingMoviesList}>
         {movies.map(movie => (
-          <li className="trending-movies-item" key={movie.id}>
+          <li key={movie.id}>
             <Link to={`/movies/${movie.id}`} state={{ from: 'Home' }}>
               <div>{movie.title}</div>
             </Link>

@@ -1,15 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import './Navigation.css';
+import css from './Navigation.module.css';
 
 function Navigation() {
   const activeStyle = {
     fontWeight: 'bold',
-    color: 'black',
+    color: 'pink',
   };
 
   return (
-    <nav className="navi">
+    <nav className={css.navi}>
       <NavLink exact="true" to="/" style={activeStyle}>
         HOME
       </NavLink>{' '}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-// import './SearchForm.css';
+import css from './SearchForm.module.css';
 
 function SearchForm({ onSubmit }) {
   const [keyword, setKeyword] = useState('');
@@ -11,16 +11,16 @@ function SearchForm({ onSubmit }) {
   };
 
   return (
-    <div className="input-div">
+    <div className={css.inputDiv}>
       <form onSubmit={handleSubmit}>
         <input
-          className="searched-movies-input"
+          className={css.searchedMoviesInput}
           type="text"
           value={keyword}
           onChange={e => setKeyword(e.target.value)}
           placeholder="Enter search keyword"
         />
-        <button className="searched-movies-button" type="submit">
+        <button className={css.searchedMoviesButton} type="submit">
           Search
         </button>
       </form>

@@ -1,0 +1,40 @@
+.movieDetailsDiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .goBackButton {
+    margin-bottom: 10px;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .goBackButton:hover,
+  .goBackButton:active {
+    background-color: rgb(247, 169, 240);
+    color: rgb(229, 21, 208);
+    cursor: pointer;
+  }
+  
+  .movieDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .movieDetailsImg {
+    margin-right: 20px;
+    border-radius: 5px;
+    height: 600px;
+  }
+  
+  .movieDetailsDescr {
+    width: 500px;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.3;
+  }

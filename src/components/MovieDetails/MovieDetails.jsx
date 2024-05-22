@@ -7,7 +7,7 @@ import {
   useLocation,
 } from 'react-router-dom';
 import Loader from '../Loader/Loader';
-// import './MovieDetails.css';
+import css from './MovieDetails.module.css';
 
 const defaultImg =
   'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=1000x700';
@@ -45,13 +45,13 @@ function MovieDetails() {
   };
 
   return (
-    <div className="movie-details-div">
-      <div className="movie-details">
-        <button className="go-back-button" onClick={goBack}>
+    <div className={css.movieDetailsDiv}>
+      <div className={css.movieDetails}>
+        <button className={css.goBackButton} onClick={goBack}>
           Back
         </button>
         <img
-          className="movie-details-img"
+          className={css.movieDetailsImg}
           src={
             movie && movie.poster_path
               ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
@@ -60,7 +60,7 @@ function MovieDetails() {
           alt={movie ? movie.title : ''}
         />
       </div>
-      <div className="movie-details-descr">
+      <div className={css.movieDetailsDescr}>
         {loading ? (
           <Loader />
         ) : (

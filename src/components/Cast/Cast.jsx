@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Loader from '../Loader/Loader';
+import css from './Cast.module.css'
 
 const defaultImg = 'https://via.placeholder.com/200x300?text=No+Image';
 
@@ -32,9 +33,8 @@ function Cast() {
       <h2>Cast</h2>
       <ul>
         {cast.map(person => (
-          <li
+          <li className={css.castList}
             key={person.cast_id}
-            style={{ listStyleType: 'none', marginBottom: '10px' }}
           >
             <img
               src={
@@ -43,12 +43,7 @@ function Cast() {
                   : defaultImg
               }
               alt={person.name}
-              style={{
-                width: '100px',
-                height: '150px',
-                marginRight: '10px',
-                verticalAlign: 'middle',
-              }}
+              className={css.castImg}
             />
             {person.name} as {person.character}
           </li>
